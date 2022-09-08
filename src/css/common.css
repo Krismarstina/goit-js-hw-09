@@ -16,3 +16,25 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  font-size: 48px;
+}
+.field {
+  position: relative;
+  min-width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.label {
+  display: none;
+}
+.field:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: -15px;
+}
